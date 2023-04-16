@@ -1,0 +1,11 @@
+# definition du goal
+float32[] x
+float32[] y
+---
+# defintion du resultat
+float32[] x
+float32[] y
+---
+#definition du feedback
+float32 x
+float32 y
