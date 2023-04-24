@@ -64,7 +64,7 @@ void Move::robotPoseCallback(const robot_msgs::msg::Pose& pose)
 	
 	RCLCPP_INFO( this -> get_logger(), "%f, %f, %f", diff_goal_x, diff_goal_y, diff_angle);
 
-	if ( diff_goal_x < 0.1 && diff_goal_y )
+	if ( diff_goal_x < 0.1 && diff_goal_y < 0.1)
 	{
 		cmd_vel.linear.x = 0.0;
 		cmd_vel.angular.z = 0.0;
